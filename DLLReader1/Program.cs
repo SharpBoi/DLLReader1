@@ -24,6 +24,8 @@ namespace DLLReader1
                 Console.WriteLine("Input assemblies directory. You can drag and drop folder name: ");
                 asmDir = Console.ReadLine();
 
+                Console.WriteLine("Reading...");
+
                 // read assemblies
                 var dlls = dllReader.ReadAssemblies(asmDir, exceptions);
 
